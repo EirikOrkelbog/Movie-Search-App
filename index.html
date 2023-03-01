@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie Search App</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/variables.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/script.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="logo">
+			<div class="logo_container">
+				<p>Movie <span>Corn.</span></p>
+			</div>
+		</div>
+
+		<div class="search_container">
+			<div class="search_element">
+				<h3>Search Movie:</h3>
+
+				<input 
+					type="text" 
+					class="form_control" 
+					placeholder="Search movie title..." 
+					id="movie_search-box">
+
+				<div class="search_list" id="search_list">
+					<div class="search_list-item">
+						<div class="search_item-thumbnail">
+							<img src="/assets/image_not_found.png">
+						</div>
+
+						<div class="search_item-info">
+							<h3>Some text here</h3>
+							<p>2017</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="result_container">
+				<div class="result_grid" id="result_grid">
+					<div class="movie_poster">
+						<img src="/assets/image_not_found.png">
+					</div>
+
+					<div class="movie_info">
+						<h3 class="movie_title">Some text here</h3>
+
+						<ul class="movie_info-mix">
+							<li class="year">Year:2017</li>
+							<li class="rated">ratings</li>
+							<li class="released">released:</li>
+						</ul>
+
+						<p class="genre"><b>genre:</b>action, adventure, comedy</p>
+						<p class="writer"><b>writer:</b>jamed dggg, dejddf, ssdffgg</p>
+						<p class="actors"><b>Actors:</b>chris pratt, jennifer aniston</p>
+						<p class="plot"><b>plot:</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos non repudiandae vitae, iure impedit maxime dolore quaerat beatae accusamus accusantium eveniet eaque exercitationem explicabo officia sequi quidem molestiae tempore fugiat!</p>
+						<p class="language"><b>language:</b>chris pratt, jennifer aniston</p>
+						<p class="awards"><b>awards:</b>chris pratt, jennifer aniston</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
