@@ -1,6 +1,5 @@
 .wrapper {
 	background-color: var(--dark-color);
-	height: 100vh;
 }
 
 .wrapper .container {
@@ -49,13 +48,13 @@
 }
 
 .search_element .form_control {
-	padding: 1rem 2rem;
-	font-size: 1.4rem;
+	padding: 1rem;
+	font-size: 1rem;
 	border: none;
 	border-radius: 3px 3px 0 0;
 	outline: none;
 	color: var(--light-dark-color);
-	width: 350px;
+	width: 100%;
 }
 
 .search_list {
@@ -71,7 +70,7 @@
 	background-color: var(--light-dark-color);
 	padding: .5rem;
 	border-bottom: 1px solid var(--dark-color);
-	width: calc(350px - 8px);
+	width: 100%;
 	color: #fff;
 	cursor: pointer;
 	transition: background-color 200ms ease;
@@ -109,10 +108,11 @@
 
 .result_grid {
 	display: flex;
+	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: center;
 	gap: 6rem;
-	padding: 2.5rem 0;
+	padding: 2.5rem 1rem;
 }
 
 .movie_poster img {
@@ -182,3 +182,19 @@
 	font-size: .9rem;
 }
 
+@media screen and (min-width: 576px) {
+	.search_element .form_control {
+		padding: 1rem 2rem;
+	}
+
+	.result_grid {
+		flex-direction: row;
+		gap: 1rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.result_grid {
+		gap: 3rem;
+	}
+}
